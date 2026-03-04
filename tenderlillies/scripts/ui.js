@@ -45,25 +45,20 @@ function initNavbar() {
     const navLogo = document.getElementById('nav-logo');
     if (navbar) {
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                // Scrolled state: Deeper shadow and shrink height
-                navbar.classList.add('shadow-2xl', 'py-1');
-                navbar.classList.remove('shadow-md', 'py-4');
-                if (navLogo) {
-                    navLogo.classList.add('scale-75');
-                    navLogo.classList.remove('scale-100');
-                }
+            if (window.scrollY > 80) {
+                // Scrolled past hero — add subtle dark pill so links stay readable
+                navbar.classList.add('bg-[#0B1F3A]/90', 'backdrop-blur-md', 'shadow-xl', 'py-4');
+                navbar.classList.remove('bg-transparent', 'py-6', 'md:py-8');
+                if (navLogo) navLogo.classList.add('h-12');
+                if (navLogo) navLogo.classList.remove('h-16', 'md:h-20');
             } else {
-                // Top state: Normal shadow and full padded height
-                navbar.classList.add('shadow-md', 'py-4');
-                navbar.classList.remove('shadow-2xl', 'py-1');
-                if (navLogo) {
-                    navLogo.classList.add('scale-100');
-                    navLogo.classList.remove('scale-75');
-                }
+                // At hero — fully transparent and tall
+                navbar.classList.remove('bg-[#0B1F3A]/90', 'backdrop-blur-md', 'shadow-xl', 'py-4');
+                navbar.classList.add('bg-transparent', 'py-6', 'md:py-8');
+                if (navLogo) navLogo.classList.remove('h-12');
+                if (navLogo) navLogo.classList.add('h-16', 'md:h-20');
             }
         });
-        // Evaluate immediately on mount
         window.dispatchEvent(new Event('scroll'));
     }
 }
