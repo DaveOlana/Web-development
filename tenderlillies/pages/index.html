@@ -57,204 +57,220 @@
 </head>
 
 <body
-    class="bg-brand-background text-brand-text antialiased overflow-x-hidden flex flex-col min-h-screen selection:bg-brand-accent selection:text-white">
+    class="bg-[#F5F5F7] text-[#1D1D1F] antialiased overflow-x-hidden flex flex-col min-h-screen selection:bg-[#2563EB] selection:text-white">
 
     <!-- Component Injection Containers -->
     <div id="navbar-container"></div>
     <div id="notice-container"></div>
+
+    <!-- Hero Section injected below navbar naturally -->
     <div id="hero-container"></div>
 
-    <!-- 1. Why Choose Us Section -->
-    <section id="intro" class="py-32 px-6 md:px-12 bg-white">
+    <!-- 1. Vision & Mission (Short, Elegant, Prestigious) -->
+    <section id="vision"
+        class="py-24 px-6 md:px-12 bg-white relative z-10 -mt-10 rounded-t-[40px] shadow-[0_-10px_40px_rgba(0,0,0,0.05)] border-t border-black/5">
+        <div class="max-w-5xl mx-auto text-center">
+            <span class="text-[#2563EB] font-semibold tracking-[0.2em] uppercase text-[11px] mb-4 block">Our
+                Institutional Purpose</span>
+            <h2
+                class="text-3xl md:text-5xl lg:text-5xl font-heading font-medium text-[#0B1F3A] mb-8 leading-tight tracking-tight">
+                To cultivate rigorous intellect, profound moral character, and a lifelong devotion to excellence.
+            </h2>
+            <div class="w-16 h-[2px] bg-[#2563EB] mx-auto mb-8"></div>
+            <p class="text-lg md:text-xl text-[#0B1F3A]/70 leading-relaxed font-light max-w-3xl mx-auto">
+                Tenderlillies is an elite foundational institution merging international principles with robust
+                traditional academics, preparing the next generation of global leaders in a deeply stimulating
+                environment.
+            </p>
+        </div>
+    </section>
+
+    <!-- 2. Quick Links (Admissions, Portal, Academics - Unilag Inspired Structure) -->
+    <section class="py-20 px-6 md:px-12 bg-[#F9FAFB] border-t border-black/5">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center max-w-3xl mx-auto mb-20">
-                <span class="text-brand-text/50 font-semibold tracking-[0.2em] uppercase text-[10px] mb-4 block">The
-                    Tenderlillies Edge</span>
-                <h2
-                    class="text-4xl md:text-5xl lg:text-6xl font-heading font-medium text-brand-primary mb-8 leading-tight tracking-tight">
-                    Setting the Standard <br /> for Early Excellence.</h2>
-                <div class="w-12 h-[1px] bg-brand-text/20 mx-auto mb-8"></div>
-                <p class="text-lg md:text-xl text-brand-text/70 leading-relaxed font-light">We offer an unparalleled
-                    educational foundation that seamlessly merges international Montessori principles with robust
-                    traditional academics.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-                <!-- Card 1 -->
-                <div
-                    class="bg-white p-12 hover:-translate-y-2 transition-transform duration-500 group border border-black/5">
-                    <div class="w-12 h-12 mb-8 text-brand-primary">
-                        <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
-                            </path>
-                        </svg>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Link Card 1 -->
+                <a href="admissions.html"
+                    class="group relative bg-[#0B1F3A] overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div
+                        class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300 z-10">
                     </div>
-                    <h3 class="text-xl font-heading font-medium text-brand-primary mb-4">Montessori Framework</h3>
-                    <p class="text-brand-text/70 font-light leading-relaxed text-sm">Our early years curriculum fosters
-                        extreme independence and organic intellectual curiosity, tailored specifically to how a child
-                        naturally learns.</p>
-                </div>
-                <!-- Card 2 -->
-                <div
-                    class="bg-white p-12 hover:-translate-y-2 transition-transform duration-500 group border border-black/5">
-                    <div class="w-12 h-12 mb-8 text-brand-primary">
-                        <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z">
-                            </path>
-                        </svg>
+                    <img src="/images/hero/little-boy-ready-for-school-looking-up.jpg"
+                        class="absolute inset-0 w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700 opacity-60">
+                    <div class="relative z-20 p-10 h-full flex flex-col justify-end min-h-[250px]">
+                        <h3 class="text-2xl font-heading font-medium text-white mb-2">Admissions</h3>
+                        <p class="text-white/80 font-light text-sm flex items-center gap-2">
+                            Begin your journey <span
+                                class="transform transition-transform group-hover:translate-x-2">→</span>
+                        </p>
                     </div>
-                    <h3 class="text-xl font-heading font-medium text-brand-primary mb-4">Character & Morality</h3>
-                    <p class="text-brand-text/70 font-light leading-relaxed text-sm">Academics are incomplete without
-                        integrity. We rigorously instill global leadership values, respect, and empathy into our daily
-                        classroom culture.</p>
-                </div>
-                <!-- Card 3 -->
-                <div
-                    class="bg-white p-12 hover:-translate-y-2 transition-transform duration-500 group border border-black/5">
-                    <div class="w-12 h-12 mb-8 text-brand-primary">
-                        <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
-                            </path>
-                        </svg>
+                </a>
+                <!-- Link Card 2 -->
+                <a href="programs.html"
+                    class="group relative bg-[#172A45] overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div
+                        class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300 z-10">
                     </div>
-                    <h3 class="text-xl font-heading font-medium text-brand-primary mb-4">Dedicated Faculty</h3>
-                    <p class="text-brand-text/70 font-light leading-relaxed text-sm">Our educators are passionately
-                        vetted industry professionals who serve not just as teachers, but as lifelong mentors to your
-                        children.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 2. Facilities / Environment Section -->
-    <section class="py-32 px-6 md:px-12 bg-brand-background">
-        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20 items-center">
-            <!-- Text Content -->
-            <div class="w-full lg:w-5/12">
-                <span
-                    class="text-brand-text/50 font-semibold tracking-[0.2em] uppercase text-[10px] mb-4 block">World-Class
-                    Environment</span>
-                <h2
-                    class="text-4xl md:text-5xl lg:text-6xl font-heading font-medium text-brand-primary mb-8 leading-tight tracking-tight">
-                    Facilities that Inspire Greatness.</h2>
-                <div class="w-12 h-[1px] bg-brand-text/20 mb-8"></div>
-                <p class="text-lg md:text-xl text-brand-text/70 leading-relaxed font-light mb-10">
-                    An elite curriculum demands elite infrastructure. Our campus provides secure, profoundly stimulating
-                    environments equipped with the latest educational technologies, bespoke recreational areas, and
-                    serene classrooms naturally optimized for deep learning.
-                </p>
-                <a href="about.html"
-                    class="inline-block border border-brand-primary text-brand-primary font-semibold uppercase tracking-[0.1em] text-sm px-8 py-4 hover:bg-brand-primary hover:text-white transition-colors duration-300">Discover
-                    Our Campus</a>
-            </div>
-
-            <!-- Image Grid - Minimalist approach -->
-            <div class="w-full lg:w-7/12 grid grid-cols-2 gap-6">
-                <div class="flex flex-col gap-6 mt-12">
-                    <img src="/images/branding/husniati-salma-ldkHWg5s3Ec-unsplash.jpg"
-                        class="w-full aspect-[4/5] object-cover">
-                </div>
-                <div class="flex flex-col gap-6">
                     <img src="/images/programs/sport/valdhy-mbemba-o0L21_kfKF0-unsplash.jpg"
-                        class="w-full aspect-[4/5] object-cover md:-mt-12">
-                </div>
+                        class="absolute inset-0 w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700 opacity-60">
+                    <div class="relative z-20 p-10 h-full flex flex-col justify-end min-h-[250px]">
+                        <h3 class="text-2xl font-heading font-medium text-white mb-2">Academics</h3>
+                        <p class="text-white/80 font-light text-sm flex items-center gap-2">
+                            Explore our curriculum <span
+                                class="transform transition-transform group-hover:translate-x-2">→</span>
+                        </p>
+                    </div>
+                </a>
+                <!-- Link Card 3 -->
+                <a href="gallery.html"
+                    class="group relative bg-[#0B1F3A] overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div
+                        class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300 z-10">
+                    </div>
+                    <img src="/images/gallery/and-i-was-a-boy-from-school.jpg"
+                        class="absolute inset-0 w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700 opacity-60">
+                    <div class="relative z-20 p-10 h-full flex flex-col justify-end min-h-[250px]">
+                        <h3 class="text-2xl font-heading font-medium text-white mb-2">Campus Life</h3>
+                        <p class="text-white/80 font-light text-sm flex items-center gap-2">
+                            View the environment <span
+                                class="transform transition-transform group-hover:translate-x-2">→</span>
+                        </p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- 3. Quick Stats (Animated) -->
-    <section class="py-24 bg-brand-primary text-white relative">
+    <!-- 3. Latest News & Updates (Card Layout) -->
+    <section class="py-24 px-6 md:px-12 bg-white border-t border-black/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-xl">
+                    <span
+                        class="text-[#2563EB] font-semibold tracking-[0.2em] uppercase text-[11px] mb-4 block">Updates</span>
+                    <h2 class="text-4xl md:text-5xl font-heading font-medium text-[#0B1F3A] leading-tight">Latest News.
+                    </h2>
+                </div>
+                <button id="view-all-notices"
+                    class="inline-block text-[#0B1F3A] font-semibold uppercase tracking-[0.1em] text-xs hover:text-[#2563EB] transition-colors pb-1 border-b border-[#0B1F3A] hover:border-[#2563EB]">
+                    View Notice Board
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- News Card 1 -->
+                <article
+                    class="bg-white border border-black/5 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="h-48 overflow-hidden bg-[#F5F5F7]">
+                        <img src="/images/notice/back-to-school.jpg"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <span
+                            class="text-xs font-semibold text-[#2563EB] uppercase tracking-widest mb-3 block">Admissions</span>
+                        <h3 class="text-xl font-heading font-medium text-[#0B1F3A] mb-4">Welcome to the New Term.</h3>
+                        <p class="text-[#0B1F3A]/70 text-sm leading-relaxed mb-6">Preparations for the highly
+                            anticipated new academic term are fully complete. We welcome our leaders back to campus.</p>
+                        <a href="#"
+                            class="text-xs font-semibold text-[#0B1F3A] uppercase tracking-widest group-hover:text-[#2563EB] transition-colors flex items-center gap-2">
+                            Read More →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- News Card 2 -->
+                <article
+                    class="bg-white border border-black/5 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="h-48 overflow-hidden bg-[#F5F5F7]">
+                        <img src="/images/notice/sitting-on-school-steps-to-go-back-to-school.jpg"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <span
+                            class="text-xs font-semibold text-[#2563EB] uppercase tracking-widest mb-3 block">Events</span>
+                        <h3 class="text-xl font-heading font-medium text-[#0B1F3A] mb-4">Annual Inter-House Sports.</h3>
+                        <p class="text-[#0B1F3A]/70 text-sm leading-relaxed mb-6">Our upcoming athletic tournament
+                            promises to showcase the rigorous physical character development of our wards.</p>
+                        <a href="#"
+                            class="text-xs font-semibold text-[#0B1F3A] uppercase tracking-widest group-hover:text-[#2563EB] transition-colors flex items-center gap-2">
+                            Read More →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- News Card 3 -->
+                <article
+                    class="bg-white border border-black/5 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="h-48 overflow-hidden bg-[#F5F5F7]">
+                        <img src="/images/notice/mother-and-son-back-to-school.jpg"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <span
+                            class="text-xs font-semibold text-[#2563EB] uppercase tracking-widest mb-3 block">Community</span>
+                        <h3 class="text-xl font-heading font-medium text-[#0B1F3A] mb-4">PTA General Framework Meeting.
+                        </h3>
+                        <p class="text-[#0B1F3A]/70 text-sm leading-relaxed mb-6">A scheduled gathering to align our
+                            pedagogical goals with parental expectations for the upcoming semester.</p>
+                        <a href="#"
+                            class="text-xs font-semibold text-[#0B1F3A] uppercase tracking-widest group-hover:text-[#2563EB] transition-colors flex items-center gap-2">
+                            Read More →
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Quick Stats (Refined University Style) -->
+    <section class="py-24 bg-[#0B1F3A] text-white relative">
         <div
             class="max-w-7xl mx-auto px-6 md:px-12 relative z-10 grid grid-cols-2 md:grid-cols-4 gap-12 text-center divide-x divide-white/10">
             <div class="stat-card">
-                <p class="text-5xl md:text-6xl font-heading font-medium mb-4 counter" data-target="15">0</p>
+                <p class="text-5xl md:text-6xl font-heading font-medium mb-4 text-white"><span class="counter"
+                        data-target="15">0</span><span class="text-[#2563EB]">+</span></p>
                 <p class="text-[10px] uppercase tracking-[0.2em] font-medium text-white/50">Years of<br />Excellence</p>
             </div>
             <div class="stat-card">
-                <p class="text-5xl md:text-6xl font-heading font-medium mb-4 counter" data-target="100">0</p>
-                <p class="text-[10px] uppercase tracking-[0.2em] font-medium text-white/50">Percent<br />Commitment</p>
+                <p class="text-5xl md:text-6xl font-heading font-medium mb-4 text-white"><span class="counter"
+                        data-target="100">0</span><span class="text-[#2563EB]">%</span></p>
+                <p class="text-[10px] uppercase tracking-[0.2em] font-medium text-white/50">Academic<br />Commitment</p>
             </div>
             <div class="stat-card">
-                <p class="text-5xl md:text-6xl font-heading font-medium mb-4">5<span class="text-white/50">:</span>1</p>
+                <p class="text-5xl md:text-6xl font-heading font-medium mb-4 text-white">5<span
+                        class="text-[#2563EB]">:</span>1</p>
                 <p class="text-[10px] uppercase tracking-[0.2em] font-medium text-white/50">Student : Teacher<br />Ratio
                 </p>
             </div>
             <div class="stat-card">
-                <p class="text-5xl md:text-6xl font-heading font-medium mb-4 counter" data-target="50">0</p>
+                <p class="text-5xl md:text-6xl font-heading font-medium mb-4 text-white"><span class="counter"
+                        data-target="50">0</span><span class="text-[#2563EB]">+</span></p>
                 <p class="text-[10px] uppercase tracking-[0.2em] font-medium text-white/50">Extracurricular<br />Modules
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- 4. Gallery Preview - Strict clean grid -->
-    <section class="py-32 px-6 md:px-12 bg-white border-t border-black/5">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-                <div class="max-w-xl">
-                    <span
-                        class="text-brand-text/50 font-semibold tracking-[0.2em] uppercase text-[10px] mb-4 block">Visual
-                        Journey</span>
-                    <h2 class="text-4xl md:text-5xl font-heading font-medium text-brand-primary leading-tight">Life at
-                        Tenderlillies.</h2>
-                </div>
-                <a href="gallery.html"
-                    class="inline-block text-brand-primary font-semibold uppercase tracking-[0.1em] text-xs hover:text-brand-text/60 transition-colors pb-1 border-b border-brand-primary hover:border-brand-text/60">
-                    View Full Gallery
-                </a>
-            </div>
-
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-1 md:gap-4" id="gallery-container">
-                <div class="aspect-square overflow-hidden group cursor-pointer bg-brand-background">
-                    <img src="/images/gallery/and-i-was-a-boy-from-school.jpg"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                </div>
-                <div class="aspect-square overflow-hidden group cursor-pointer bg-brand-background">
-                    <img src="/images/gallery/modern-family-photo.jpg"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                </div>
-                <div class="aspect-square overflow-hidden group cursor-pointer bg-brand-background">
-                    <img src="/images/gallery/oli2020-school-4431068_1920.jpg"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                </div>
-                <div class="aspect-square overflow-hidden group cursor-pointer bg-brand-background">
-                    <img src="/images/gallery/terry-zhong-f-Aqs5dElOU-unsplash.jpg"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                </div>
-                <div class="aspect-square overflow-hidden group cursor-pointer bg-brand-background">
-                    <img src="/images/gallery/young-child-smirks.jpg"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                </div>
-                <div class="aspect-square overflow-hidden group cursor-pointer bg-brand-background">
-                    <img src="/images/gallery/vitaly-gariev-5jeHKPNLdLY-unsplash.jpg"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. Pre-Footer CTA Section -->
+    <!-- Pre-Footer CTA Section -->
     <section class="py-32 px-6 relative bg-white">
         <div class="max-w-3xl mx-auto text-center relative z-10 flex flex-col items-center">
-            <span class="text-brand-text/50 font-semibold tracking-[0.2em] uppercase text-[10px] mb-6 block">Join Our
+            <span class="text-[#2563EB] font-semibold tracking-[0.2em] uppercase text-[11px] mb-6 block">Join Our
                 Community</span>
-            <h2 class="text-4xl md:text-5xl lg:text-6xl font-heading font-medium text-brand-primary mb-8 leading-tight">
-                Shape Their Future Today.</h2>
-            <div class="w-12 h-[1px] bg-brand-text/20 mx-auto mb-8"></div>
-            <p class="text-lg md:text-xl text-brand-text/70 mb-12 font-light leading-relaxed">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-heading font-medium text-[#0B1F3A] mb-8 leading-tight">
+                Shape Their Future Today.
+            </h2>
+            <div class="w-16 h-[2px] bg-[#2563EB] mx-auto mb-8"></div>
+            <p class="text-lg md:text-xl text-[#0B1F3A]/70 mb-12 font-light leading-relaxed">
                 Admissions are strictly limited to ensure an optimal learning environment. Connect with our registry to
                 secure a foundational placement for your child.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
                 <a href="admissions.html"
-                    class="w-full sm:w-auto text-center bg-brand-primary text-white px-10 py-5 font-semibold uppercase tracking-[0.1em] text-sm hover:bg-brand-text transition-colors duration-300">
+                    class="w-full sm:w-auto text-center bg-[#2563EB] text-white px-10 py-5 font-semibold uppercase tracking-[0.1em] text-sm hover:bg-blue-700 shadow-lg hover:shadow-xl transition-all duration-300">
                     Commence Registration
                 </a>
                 <a href="contact.html"
-                    class="w-full sm:w-auto text-center bg-transparent border border-brand-primary/20 text-brand-primary px-10 py-5 font-semibold uppercase tracking-[0.1em] text-sm hover:border-brand-primary transition-colors duration-300">
+                    class="w-full sm:w-auto text-center bg-transparent border border-[#0B1F3A]/20 text-[#0B1F3A] px-10 py-5 font-semibold uppercase tracking-[0.1em] text-sm hover:border-[#0B1F3A] hover:bg-[#0B1F3A]/5 transition-all duration-300">
                     Speak with Admin
                 </a>
             </div>
@@ -268,8 +284,17 @@
     <script src="/scripts/ui.js"></script>
     <script src="/scripts/notice.js"></script>
     <script>
-        // Intersection Observer for animated Quick Stats Counter
+        // Trigger Notice board when clicking 'View Notice Board' inside Latest news
         document.addEventListener('DOMContentLoaded', () => {
+            const viewAllNoticesBtn = document.getElementById('view-all-notices');
+            if (viewAllNoticesBtn && window.initNotice) {
+                viewAllNoticesBtn.addEventListener('click', () => {
+                    const desktopOpenBtn = document.getElementById('open-notice-board-desktop');
+                    if (desktopOpenBtn) desktopOpenBtn.click();
+                });
+            }
+
+            // Intersection Observer for animated Quick Stats Counter
             const counters = document.querySelectorAll('.counter');
             const speed = 200;
 
@@ -285,7 +310,7 @@
                                 target.innerText = Math.ceil(count + inc);
                                 setTimeout(updateCount, 15);
                             } else {
-                                target.innerText = targetVal + (targetVal === 15 || targetVal === 50 || targetVal === 100 ? "+" : "");
+                                target.innerText = targetVal;
                             }
                         };
                         updateCount();
