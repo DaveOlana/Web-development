@@ -222,32 +222,69 @@
         </div>
     </section>
 
-    <!-- 4. Quick Stats (Refined University Style) -->
-    <section class="py-24 bg-[#0B1F3A] text-white relative">
-        <div
-            class="max-w-7xl mx-auto px-6 md:px-12 relative z-10 grid grid-cols-2 md:grid-cols-4 gap-12 text-center divide-x divide-white/10">
-            <div class="stat-card">
-                <p class="text-5xl md:text-6xl font-heading font-medium mb-4 text-white"><span class="counter"
-                        data-target="15">0</span><span class="text-[#2563EB]">+</span></p>
-                <p class="text-[10px] uppercase tracking-[0.2em] font-medium text-white/50">Years of<br />Excellence</p>
-            </div>
-            <div class="stat-card">
-                <p class="text-5xl md:text-6xl font-heading font-medium mb-4 text-white"><span class="counter"
-                        data-target="100">0</span><span class="text-[#2563EB]">%</span></p>
-                <p class="text-[10px] uppercase tracking-[0.2em] font-medium text-white/50">Academic<br />Commitment</p>
-            </div>
-            <div class="stat-card">
-                <p class="text-5xl md:text-6xl font-heading font-medium mb-4 text-white">5<span
-                        class="text-[#2563EB]">:</span>1</p>
-                <p class="text-[10px] uppercase tracking-[0.2em] font-medium text-white/50">Student : Teacher<br />Ratio
+    <!-- 4. Quick Stats (Premium Redesign) -->
+    <section class="bg-blue-950 text-white relative">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 py-20 px-10 md:px-16 relative z-10">
+
+            <!-- Stat Item 1 -->
+            <div
+                class="stat-card flex flex-col items-center justify-center text-center group border-b md:border-b-0 border-blue-800/50 pb-8 md:pb-0 md:border-r">
+                <svg class="h-8 w-8 mb-4 text-blue-400 opacity-80 group-hover:opacity-100 transition-opacity"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                </svg>
+                <p class="font-serif text-6xl md:text-7xl text-white font-medium">
+                    <span class="counter" data-target="15">0</span><span class="text-blue-400">+</span>
                 </p>
+                <p class="text-xs md:text-sm text-gray-400 tracking-[0.2em] uppercase font-semibold mt-4">Years
+                    of<br />Excellence</p>
             </div>
-            <div class="stat-card">
-                <p class="text-5xl md:text-6xl font-heading font-medium mb-4 text-white"><span class="counter"
-                        data-target="50">0</span><span class="text-[#2563EB]">+</span></p>
-                <p class="text-[10px] uppercase tracking-[0.2em] font-medium text-white/50">Extracurricular<br />Modules
+
+            <!-- Stat Item 2 -->
+            <div
+                class="stat-card flex flex-col items-center justify-center text-center group border-b md:border-b-0 border-blue-800/50 pb-8 md:pb-0 md:border-r">
+                <svg class="h-8 w-8 mb-4 text-blue-400 opacity-80 group-hover:opacity-100 transition-opacity"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+                <p class="font-serif text-6xl md:text-7xl text-white font-medium">
+                    <span class="counter" data-target="100">0</span><span class="text-blue-400">%</span>
                 </p>
+                <p class="text-xs md:text-sm text-gray-400 tracking-[0.2em] uppercase font-semibold mt-4">
+                    Academic<br />Commitment</p>
             </div>
+
+            <!-- Stat Item 3 -->
+            <div
+                class="stat-card flex flex-col items-center justify-center text-center group border-b md:border-b-0 border-blue-800/50 pb-8 md:pb-0 md:border-r">
+                <svg class="h-8 w-8 mb-4 text-blue-400 opacity-80 group-hover:opacity-100 transition-opacity"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <p class="font-serif text-6xl md:text-7xl text-white font-medium">
+                    5<span class="text-blue-400">:</span>1
+                </p>
+                <p class="text-xs md:text-sm text-gray-400 tracking-[0.2em] uppercase font-semibold mt-4">Student :
+                    Teacher<br />Ratio</p>
+            </div>
+
+            <!-- Stat Item 4 -->
+            <div class="stat-card flex flex-col items-center justify-center text-center group border-r-0">
+                <svg class="h-8 w-8 mb-4 text-blue-400 opacity-80 group-hover:opacity-100 transition-opacity"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                </svg>
+                <p class="font-serif text-6xl md:text-7xl text-white font-medium">
+                    <span class="counter" data-target="50">0</span><span class="text-blue-400">+</span>
+                </p>
+                <p class="text-xs md:text-sm text-gray-400 tracking-[0.2em] uppercase font-semibold mt-4">
+                    Extracurricular<br />Modules</p>
+            </div>
+
         </div>
     </section>
 
