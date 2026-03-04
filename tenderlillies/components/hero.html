@@ -10,35 +10,33 @@
     <div class="absolute inset-0 bg-gradient-to-t from-[#0B1F3A] via-[#0B1F3A]/70 to-black/30 z-10"></div>
     <div class="absolute inset-0 bg-gradient-to-r from-[#0B1F3A]/90 to-transparent z-10 w-full md:w-3/4"></div>
 
-    <!-- Hero Content -->
-    <div class="relative w-full min-h-screen flex flex-col justify-center pb-24 px-10 md:px-16">
-
-        <!-- Tight Content Wrapper (pt-[120px] -> pt-32 via Tailwind spec) -->
-        <div class="flex flex-col gap-6 items-start max-w-3xl relative z-10 mx-auto w-full max-w-7xl pt-32">
-            <span
-                class="inline-block py-1.5 px-4 bg-[#2563EB]/20 text-[#2563EB] font-semibold text-[11px] tracking-[0.2em] uppercase animate-[fadeUp_1s_ease-out_0.2s_both] backdrop-blur-md rounded border border-[#2563EB]/30">
+    <!-- Hero Content exactly from User Spec with inherited logic applied to new DOM -->
+    <div class="relative z-10 flex flex-col justify-center h-full min-h-screen pt-40 pb-24 px-10 md:px-16">
+        <div class="max-w-3xl flex flex-col items-start gap-6">
+            <div
+                class="border border-blue-400/50 bg-blue-900/30 backdrop-blur-sm px-4 py-1 rounded-sm text-blue-100 text-[11px] tracking-widest uppercase font-semibold animate-[fadeUp_1s_ease-out_0.2s_both]">
                 A Legacy of Excellence
-            </span>
+            </div>
+
             <h1
-                class="text-5xl md:text-7xl lg:text-8xl font-heading font-medium text-white leading-[1.05] animate-[fadeUp_1.2s_ease-out_0.4s_both] tracking-tight drop-shadow-lg">
-                Empowering <br /> <span class="text-[#F9FAFB] italic">Future Leaders.</span>
+                class="text-white text-5xl md:text-7xl lg:text-8xl font-heading font-medium leading-[1.05] animate-[fadeUp_1.2s_ease-out_0.4s_both]">
+                Empowering<br>Future Leaders.
             </h1>
+
             <p
-                class="text-lg md:text-xl text-[#F9FAFB]/80 font-light max-w-2xl animate-[fadeUp_1.2s_ease-out_0.6s_both] leading-relaxed">
+                class="text-gray-200 text-lg md:text-xl max-w-2xl leading-relaxed font-light animate-[fadeUp_1.2s_ease-out_0.6s_both]">
                 Experience world-class foundational education merging rigorous academics with profound character
                 development
                 in a truly premier environment.
             </p>
-            <div
-                class="flex flex-col sm:flex-row items-center gap-4 animate-[fadeUp_1.2s_ease-out_0.8s_both] w-full sm:w-auto mt-4">
-                <a href="admissions.html"
-                    class="w-full sm:w-auto text-center bg-[#2563EB] text-white px-8 py-4 font-semibold text-sm uppercase tracking-[0.1em] shadow-[0_4px_14px_0_rgba(37,99,235,0.39)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.5)] hover:bg-blue-600 transition-all duration-300 transform hover:-translate-y-0.5 rounded-sm">
-                    Explore Admissions
-                </a>
-                <a href="programs.html"
-                    class="w-full sm:w-auto text-center bg-white/5 backdrop-blur-sm border border-white/20 text-white px-8 py-4 font-semibold text-sm uppercase tracking-[0.1em] hover:bg-white/10 transition-colors duration-300 rounded-sm">
-                    Our Programs
-                </a>
+
+            <div class="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto animate-[fadeUp_1.2s_ease-out_0.8s_both]">
+                <button
+                    class="bg-blue-600 w-full sm:w-auto text-white font-bold px-8 py-4 rounded-sm hover:bg-blue-700 transition-all uppercase text-sm tracking-[0.1em]">EXPLORE
+                    ADMISSIONS</button>
+                <button
+                    class="border border-white w-full sm:w-auto text-white font-bold px-8 py-4 rounded-sm hover:bg-white/10 transition-all uppercase text-sm tracking-[0.1em]">OUR
+                    PROGRAMS</button>
             </div>
         </div>
     </div>
