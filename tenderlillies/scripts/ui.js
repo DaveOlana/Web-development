@@ -46,17 +46,17 @@ function initNavbar() {
     if (navbar) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 80) {
-                // Scrolled past hero — add subtle dark pill so links stay readable
-                navbar.classList.add('bg-[#0B1F3A]/90', 'backdrop-blur-md', 'shadow-xl', 'py-4');
-                navbar.classList.remove('bg-transparent', 'py-6', 'md:py-8');
-                if (navLogo) navLogo.classList.add('h-12');
-                if (navLogo) navLogo.classList.remove('h-16', 'md:h-20');
-            } else {
-                // At hero — fully transparent and tall
-                navbar.classList.remove('bg-[#0B1F3A]/90', 'backdrop-blur-md', 'shadow-xl', 'py-4');
-                navbar.classList.add('bg-transparent', 'py-6', 'md:py-8');
-                if (navLogo) navLogo.classList.remove('h-12');
+                // Scrolled past hero — fix to top and add subtle dark pill
+                navbar.classList.add('fixed', 'bg-[#0B1F3A]/90', 'backdrop-blur-md', 'shadow-xl', 'py-4');
+                navbar.classList.remove('absolute', 'bg-transparent', 'py-6', 'md:py-8');
                 if (navLogo) navLogo.classList.add('h-16', 'md:h-20');
+                if (navLogo) navLogo.classList.remove('h-24', 'md:h-[100px]');
+            } else {
+                // At hero — absolute top overlay and fully transparent
+                navbar.classList.add('absolute', 'bg-transparent', 'py-6', 'md:py-8');
+                navbar.classList.remove('fixed', 'bg-[#0B1F3A]/90', 'backdrop-blur-md', 'shadow-xl', 'py-4');
+                if (navLogo) navLogo.classList.add('h-24', 'md:h-[100px]');
+                if (navLogo) navLogo.classList.remove('h-16', 'md:h-20');
             }
         });
         window.dispatchEvent(new Event('scroll'));
