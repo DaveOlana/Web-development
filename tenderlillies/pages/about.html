@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Tenderlillies School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            primary: '#0A1F44',
+                            accent: '#2563EB',
+                            background: '#F9FAFB',
+                            text: '#111827'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        heading: ['Playfair Display', 'Georgia', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Playfair Display', serif; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+
+<body class="bg-brand-background text-brand-text antialiased overflow-x-hidden flex flex-col min-h-screen selection:bg-brand-accent selection:text-white">
+
+    <div id="navbar-container"></div>
+    <div id="notice-container"></div>
+
+    <!-- Inner Page Header -->
+    <div class="pt-40 pb-20 bg-brand-primary relative overflow-hidden border-b border-white/10">
+        <div
+            class="absolute inset-0 opacity-20 bg-[url('/images/branding/national-cancer-institute-N_aihp118p8-unsplash.jpg')] bg-cover bg-center">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-primary to-transparent z-10"></div>
+        <div class="max-w-7xl mx-auto px-4 md:px-12 relative z-20 text-center">
+            <span class="text-white/60 font-medium tracking-widest uppercase text-xs mb-4 block">Discover our
+                Roots</span>
+            <h1 class="text-4xl md:text-6xl font-heading font-bold text-white mb-6">About Tenderlillies</h1>
+            <div class="w-16 h-1 bg-brand-accent mx-auto rounded-full"></div>
+        </div>
+    </div>
+
+    <!-- Main Content Grid -->
+    <main class="flex-grow bg-white pt-16 pb-24 px-4 md:px-12">
+        <div class="max-w-7xl mx-auto">
+
+            <!-- History and Vision Block -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
+                <div>
+                    <h2 class="text-3xl font-heading font-bold text-brand-primary mb-6">Our History</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6 font-light">
+                        Established with a profound commitment to educational excellence, Tenderlillies began as a
+                        vision to create a nurturing environment where foundational learning is prioritized. Over the
+                        years, we have evolved into a premier institution recognized for shaping young minds and
+                        instilling lifelong core values.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed font-light">
+                        Our journey is marked by continuous growth, driven by a dedicated faculty and a community of
+                        parents who share our belief that early childhood and primary education are the absolute
+                        cornerstones of future success.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="/images/branding/numbers-pencils-chalkboard.jpg" alt="Classroom"
+                        class="w-full h-64 object-cover rounded-xl shadow-md border border-gray-100">
+                    <img src="/images/programs/sport/valdhy-mbemba-o0L21_kfKF0-unsplash.jpg" alt="Activities"
+                        class="w-full h-64 object-cover rounded-xl shadow-md mt-8 border border-gray-100">
+                </div>
+            </div>
+
+            <!-- Mission & Vision Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+                <div
+                    class="bg-gray-50 p-10 rounded-2xl border border-gray-100 shadow-sm relative overflow-hidden group hover:shadow-xl transition-shadow">
+                    <div
+                        class="absolute top-0 right-0 p-8 opacity-5 text-brand-accent group-hover:scale-110 transition-transform">
+                        <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-heading font-bold text-brand-primary mb-4 relative z-10">Our Mission</h3>
+                    <p class="text-gray-600 leading-relaxed relative z-10 font-light">To provide a stimulating, safe,
+                        and academically rigorous environment that encourages holistic development, critical thinking,
+                        and a profound love for learning in every student.</p>
+                </div>
+
+                <div class="bg-brand-accent p-10 rounded-2xl shadow-xl relative overflow-hidden group">
+                    <div
+                        class="absolute top-0 right-0 p-8 opacity-10 text-white group-hover:scale-110 transition-transform">
+                        <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-heading font-bold text-white mb-4 relative z-10">Our Vision</h3>
+                    <p class="text-blue-100 leading-relaxed relative z-10 font-light">To be a leading center of early
+                        childhood and primary education in Nigeria, recognized globally for producing well-rounded,
+                        morally upright, and globally competitive future leaders.</p>
+                </div>
+            </div>
+
+            <!-- Anthem & Core Values -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24 items-start">
+                <div
+                    class="bg-brand-primary text-white p-10 shadow-2xl rounded-2xl relative overflow-hidden border border-gray-800">
+                    <div class="absolute top-0 right-0 opacity-5 w-48 h-48 bg-brand-accent rounded-full blur-3xl"></div>
+                    <h3 class="text-2xl font-heading font-bold text-white mb-6 relative z-10">School Anthem & Pledge
+                    </h3>
+
+                    <div class="mb-8 relative z-10">
+                        <h4 class="font-bold text-white/50 tracking-wider text-sm uppercase mb-3">The Anthem</h4>
+                        <div class="pl-4 border-l border-white/20 italic text-gray-300 space-y-2 font-light">
+                            <p>Arise, Tenderlillies, stand tall and bright,</p>
+                            <p>Guiding the future with knowledge and light.</p>
+                            <p>With honor and grace, we lead the way,</p>
+                            <p>Building our nation, day by day.</p>
+                        </div>
+                    </div>
+
+                    <div class="relative z-10">
+                        <h4 class="font-bold text-white/50 tracking-wider text-sm uppercase mb-3">The Pledge</h4>
+                        <p class="pl-4 border-l border-white/20 italic text-gray-300 font-light">
+                            I pledge to my school, Tenderlillies, to be dedicated, respectful, and persistent. To uphold
+                            the values of integrity and to always strive for the highest peak of excellence in all my
+                            endeavors.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-heading font-bold text-brand-primary mb-8">Our Core Values</h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center text-brand-accent">
+                                <span class="font-bold font-heading text-xl">L</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-text text-lg">Leadership</h4>
+                                <p class="text-gray-600 mt-1 font-light">Fostering independence and the courage to take
+                                    initiative.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center text-brand-accent">
+                                <span class="font-bold font-heading text-xl">I</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-text text-lg">Integrity</h4>
+                                <p class="text-gray-600 mt-1 font-light">Demanding honesty and strong moral principles
+                                    in all actions.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 rounded-full bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center text-brand-accent">
+                                <span class="font-bold font-heading text-xl">E</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-text text-lg">Excellence</h4>
+                                <p class="text-gray-600 mt-1 font-light">Refusing to settle for less than our absolute
+                                    best academic output.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Note from the Owner -->
+            <div class="bg-gray-50 p-8 md:p-12 rounded-2xl border border-gray-200 shadow-sm relative overflow-hidden">
+                <div class="flex flex-col md:flex-row gap-8 items-center md:items-start relative z-10">
+                    <img src="/images/testimonials/school owner/fashion-model-stares-down-the-camera.jpg"
+                        alt="School Director"
+                        class="w-32 h-32 rounded-full object-cover border-4 border-white shadow-xl flex-shrink-0"
+                        onerror="this.style.display='none'">
+                    <div>
+                        <h3 class="text-2xl font-heading font-bold text-brand-primary mb-4">A Note from the Director</h3>
+                        <p class="text-gray-600 leading-relaxed mb-4 italic font-light">
+                            "Welcome to a community that genuinely cares about the granular development of your child.
+                            We do not just teach; we mentor, we guide, and we inspire. Entrusting your child's
+                            foundational years to Tenderlillies is an investment in a future characterized by
+                            intellectual curiosity and moral fortitude."
+                        </p>
+                        <p class="font-bold text-brand-text">— Director of Tenderlillies Institution</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+    <script src="/scripts/ui.js"></script>
+    <script src="/scripts/notice.js"></script>
+</body>
+
+</html>

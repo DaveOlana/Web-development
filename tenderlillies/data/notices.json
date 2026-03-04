@@ -4,14 +4,6 @@
         "title": "Welcome to the New Term",
         "date": "2026-03-01",
         "type": "image",
-        "image": "school assets/branding/national-cancer-institute-N_aihp118p8-unsplash.jpg",
-        "content": "We are thrilled to welcome all our Tenderlillies back for an exciting new academic term. Please ensure all school supplies are labeled."
-    },
-    {
-        "id": 2,
-        "title": "Inter-House Sports Competition",
-        "date": "2026-03-15",
-        "type": "text",
-        "content": "Our annual Inter-House Sports competition is coming up! Parents are warmly invited to cheer on our young athletes. More details to follow regarding house colors and team registrations."
+        "image": "/images/notice/back-to-school.jpg"
     }
 ]
