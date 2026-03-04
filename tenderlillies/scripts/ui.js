@@ -42,16 +42,25 @@ function initUI() {
 
 function initNavbar() {
     const navbar = document.getElementById('navbar');
+    const navLogo = document.getElementById('nav-logo');
     if (navbar) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
-                // Scrolled state: Deeper shadow
-                navbar.classList.add('shadow-2xl');
-                navbar.classList.remove('shadow-md');
+                // Scrolled state: Deeper shadow and shrink height
+                navbar.classList.add('shadow-2xl', 'py-1');
+                navbar.classList.remove('shadow-md', 'py-4');
+                if (navLogo) {
+                    navLogo.classList.add('scale-75');
+                    navLogo.classList.remove('scale-100');
+                }
             } else {
-                // Top state: Normal shadow
-                navbar.classList.add('shadow-md');
-                navbar.classList.remove('shadow-2xl');
+                // Top state: Normal shadow and full padded height
+                navbar.classList.add('shadow-md', 'py-4');
+                navbar.classList.remove('shadow-2xl', 'py-1');
+                if (navLogo) {
+                    navLogo.classList.add('scale-100');
+                    navLogo.classList.remove('scale-75');
+                }
             }
         });
         // Evaluate immediately on mount
