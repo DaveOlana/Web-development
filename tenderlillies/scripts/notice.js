@@ -52,19 +52,12 @@ window.initNotice = async function () {
 
             function showNotice() {
                 noticeModal.classList.remove('hidden');
-                void noticeModal.offsetWidth;
-                noticeModal.classList.add('opacity-100');
-                noticeModal.classList.remove('opacity-0');
-                noticeContent.classList.remove('scale-95', 'opacity-0');
-                noticeContent.classList.add('scale-100', 'opacity-100');
+                noticeModal.classList.add('flex');
             }
 
             function hideNotice() {
-                noticeModal.classList.remove('opacity-100');
-                noticeModal.classList.add('opacity-0');
-                noticeContent.classList.remove('scale-100', 'opacity-100');
-                noticeContent.classList.add('scale-95', 'opacity-0');
-                setTimeout(() => noticeModal.classList.add('hidden'), 500);
+                noticeModal.classList.remove('flex');
+                noticeModal.classList.add('hidden');
             }
 
             // Close modal when clicking strictly on the modal backdrop
