@@ -45,13 +45,13 @@ function initNavbar() {
     if (navbar) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
-                // Scrolled state: Dark background with blur effect
-                navbar.classList.remove('bg-transparent', 'border-white/5');
-                navbar.classList.add('bg-brand-primary/95', 'backdrop-blur-md', 'border-white/5', 'shadow-2xl');
+                // Scrolled state: Deeper shadow
+                navbar.classList.add('shadow-2xl');
+                navbar.classList.remove('shadow-md');
             } else {
-                // Top state: Transparent
-                navbar.classList.add('bg-transparent', 'border-white/5');
-                navbar.classList.remove('bg-brand-primary/95', 'backdrop-blur-md', 'border-white/5', 'shadow-2xl');
+                // Top state: Normal shadow
+                navbar.classList.add('shadow-md');
+                navbar.classList.remove('shadow-2xl');
             }
         });
         // Evaluate immediately on mount
